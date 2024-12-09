@@ -1,1 +1,0 @@
-export const BACKEND_URL = "https://sfs-mk2e.onrender.com"

@@ -7,7 +7,6 @@ import { CodeEditor } from '../components/CodeEditor';
 import { PreviewFrame } from '../components/PreviewFrame';
 import { Step, FileItem, StepType } from '../types';
 import axios from 'axios';
-import { BACKEND_URL } from '../config';
 import { parseXml } from '../steps';
 import { useWebContainer } from '../hooks/useWebContainer';
 import { FileNode } from '@webcontainer/api';
@@ -15,6 +14,8 @@ import { Loader } from '../components/Loader';
 import { Download } from 'lucide-react';
 import JSZip from 'jszip';
 
+// console.log("here is env",process.env.BACKEND_URL)
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 export function Builder() {
   const location = useLocation();
   const { prompt } = location.state as { prompt: string };
