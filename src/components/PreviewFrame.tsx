@@ -1,6 +1,6 @@
 import { WebContainer } from '@webcontainer/api';
 import React, { useEffect, useState } from 'react';
-
+import {spawn } from 'child_process'
 interface PreviewFrameProps {
   files: any[];
   webContainer: WebContainer;
