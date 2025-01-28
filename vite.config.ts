@@ -11,7 +11,7 @@ export default defineConfig({
     headers: {
       "Cross-Origin-Embedder-Policy": "require-corp",
       "Cross-Origin-Opener-Policy": "same-origin",
-      "Content-Security-Policy": "connect-src 'self'; script-src 'self'"
+      "Content-Security-Policy": "connect-src 'self'; script-src 'self' https://sfs-mk2e.onrender.com"
     }
   }
 });
